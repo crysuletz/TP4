@@ -1,9 +1,11 @@
 class Noeud:
+    """Représente un nœud d'un arbre d'expression."""
     def __init__(self, val, enfants):    # le constructeur(init)
         self.val= val
         self.enfants= enfants
     
     def ajouter(self, enfant):
+        """Ajoute un nœud enfant à la liste des enfants."""
         if isinstance(enfant, Noeud):
             self.enfants.append(enfant)
         
